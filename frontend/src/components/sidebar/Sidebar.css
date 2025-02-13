@@ -1,0 +1,116 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;  /* Default width when expanded */
+    transition: all 0.3s ease;
+    background: #153232; /* Gradient background */
+    z-index: 999;
+    font-size: 15px;
+    overflow: hidden;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2); /* Add a shadow for a modern look */
+}
+
+/* When sidebar is collapsed */
+.sidebar.collapsed {
+    width: 80px;  /* Width when collapsed */
+}
+
+/* Sidebar header */
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background: #153232; /* Solid color for header */
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid #153232;
+    font-size: 18px;
+}
+
+/* Menu bar inside the sidebar */
+.menu-bar {
+    background-color: #153232;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+/* Menu items (icons and text) */
+.menu-bar .menu-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 6px;
+}
+
+.menu-bar .menu-item:hover {
+    background: #f0f0f0; /* Hover effect with lighter background */
+    color: #3f05b3; /* Change text color on hover */
+}
+
+.menu-bar .menu-item span {
+    margin-left: 20px; /* Increased gap between icon and text */
+    font-weight: 500;
+}
+
+/* When sidebar is collapsed, hide the text but keep the icons */
+.sidebar.collapsed .menu-bar .menu-item span {
+    display: none;
+}
+
+/* Custom hamburger button */
+.toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Fix the position to the top-right corner */
+    background: white; /* Dark blue background for the button */
+    color: #153232;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 20%;
+    cursor: pointer;
+    z-index: 1000; /* Make sure the toggle button is above other content */
+    transition: background-color 0.3s ease;
+}
+
+.toggle:hover {
+    background: rgba(255, 255, 255, 0.545); /* Lighter blue when hovered */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Add spacing and cleaner font to menu items */
+.menu-bar .menu-item span {
+    font-weight: 500;
+}
+
+/* Shadow effect for a modern feel */
+.sidebar .menu-item {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding subtle shadows */
+}
+
+/* Custom spacing between icons and text */
+.menu-bar .menu-item i {
+    font-size: 1.5rem; /* Increased icon size */
+}

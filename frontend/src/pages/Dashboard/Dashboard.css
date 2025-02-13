@@ -1,0 +1,66 @@
+.dashboard-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+   
+}
+
+.stat-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.stat-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chart-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.recent-sales-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.recent-sales-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-sales-section li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-sales-section p {
+    font-size: 16px;
+    color: #555;
+}

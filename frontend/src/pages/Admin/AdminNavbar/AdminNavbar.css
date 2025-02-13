@@ -1,0 +1,31 @@
+.navbar_items {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #333;
+  }
+  
+  .admin-nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-nav-icons a {
+    color: white;
+  }
+  
+  .admin-nav-icons :hover {
+    color: #ffcc00; /* Highlight color on hover */
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+    margin-right: 20px;
+  }
+  

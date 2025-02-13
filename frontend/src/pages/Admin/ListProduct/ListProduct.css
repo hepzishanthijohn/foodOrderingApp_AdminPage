@@ -1,0 +1,142 @@
+.list-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 740px;
+    padding: 10px 50px;
+    margin: 50px;
+    border-radius: 6px;
+    background: white;
+    
+}
+.low-stock {
+    background-color: #f8d7da; /* Light red background for low stock */
+    color: #721c24; /* Dark red text */
+}
+.filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filter-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.filter-container input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.sort-button {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.sort-button:hover {
+    background-color: #e0e0e0;
+}
+
+.listproduct-format-main {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.listproduct-format {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.low-stock {
+    background-color: #f8d7da;
+}
+
+.listproduct-actions {
+    display: flex;
+    gap: 20px;
+}
+
+
+.listproduct-format-main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.listproduct-format{
+    align-items: center;
+    font-weight: 400;
+}
+.listproduct-product-icon{
+    height: 80px;
+}
+.listproduct-remove-icon{
+    cursor: pointer;
+    margin: auto;
+
+}
+.listproduct-allproducts{
+    overflow-y: auto;
+}
+@media(max-width:800px){
+    .listContainer{
+        z-index: 999;
+    }
+    .list-product{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+        background: #000;
+
+
+    }
+    .listproduct-format-main{
+        padding: 15px 0px;
+        color: white;
+        font-size: 12px;
+    }
+    .listproduct-product-icon{
+        height: 60px;
+
+    }
+}
+@media(max-width:500px){
+    .listContainer{
+        z-index: 999;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .list-product{
+        background: #000;
+    }
+    .listproduct-format-main{
+        
+        color: white;
+    }
+}
