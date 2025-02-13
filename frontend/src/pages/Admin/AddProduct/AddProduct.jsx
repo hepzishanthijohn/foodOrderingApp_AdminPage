@@ -27,7 +27,7 @@ const AddProduct = () => {
 
     try {
       // Send request
-      const response = await axios.post('https://restaurantwebsite-mernstack-1.onrender.com/api/products/upload', data, {
+      const response = await axios.post('https://foodorderingapp-adminpage.onrender.com/api/products/upload', data, {
         headers: {
           'Content-Type': 'multipart/form-data' // This is important when sending FormData
         }

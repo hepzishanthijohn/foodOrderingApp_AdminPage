@@ -22,7 +22,7 @@ const EditProduct = () => {
     // Fetch product details using the ID from the URL
     const fetchProductDetails = async () => {
         try {
-            const response = await axios.get(`http://localhost:4000/api/products/getProduct/${id}`);
+            const response = await axios.get(`https://foodorderingapp-adminpage.onrender.com/api/products/getProduct/${id}`);
             const product = response.data;
             setProductData({
                 title: product.title,
@@ -63,7 +63,7 @@ const EditProduct = () => {
                 formData.append('image', productData.image); // Add the new image if it's uploaded
             }
 
-            await axios.put(`http://localhost:4000/api/products/editproduct/${id}`, formData, {
+            await axios.put(`https://foodorderingapp-adminpage.onrender.com/api/products/editproduct/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
