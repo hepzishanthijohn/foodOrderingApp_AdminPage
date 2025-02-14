@@ -1,140 +1,78 @@
-/* General Dashboard Styles */
-.dashboard-container {
-    background-color: #f4f6f9;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
+/* Dashboard container */
+
+/* Card container with horizontal scroll */
+.card-scroll-container {
+  display: flex;
+  align-items: center;
+  position: relative;
   
-  /* Header Style */
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #333;
-  }
+}
+
+.card-container {
+  display: flex;
+  overflow-x: hidden; /* Hides native scrollbar */
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.card-item {
+  background-color: black;
+  border-radius: 7px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 2px;
+}
+
+.card-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-item .card-title {
+  font-size: 15px;
+  font-weight: 450;
+  color: white;
+  margin-top: 10px;
+}
+
+.card-item .card-price {
+  font-size: 16px;
+  color: #f6db0a;
   
-  /* Summary Stats (Cards) */
-  .summary-stats {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+/* Arrow buttons for scrolling */
+.scroll-arrow {
   
-  .summary-stats .card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 30%;
-  }
-  
-  .summary-stats .card .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #444;
-  }
-  
-  .summary-stats .card .card-text {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #007bff;
-  }
-  
-  /* Button Styles */
-  button {
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    opacity: 0.9;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
-  /* Table Styles */
-  .table {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 15px;
-    border-spacing: 0;
-    width: 100%;
-  }
-  
-  .table thead {
-    background-color: #343a40;
-    color: white;
-  }
-  
-  .table th, .table td {
-    padding: 12px;
-    text-align: left;
-  }
-  
-  .table img {
-    border-radius: 5px;
-    width: 70px;
-    height: 70px;
-  }
-  
-  /* Pagination Styles */
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .pagination .page-item {
-    margin: 0 5px;
-  }
-  
-  .pagination .page-item a {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-  
-  .pagination .page-item.active a {
-    background-color: #0056b3;
-  }
-  
-  /* Modal Styles */
-  .modal-content {
-    border-radius: 10px;
-  }
-  
-  .modal-header {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .modal-footer button {
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  /* Search Bar Style */
-  .search-bar {
-    padding: 10px 20px;
-    width: 250px;
-    border-radius: 25px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    margin-right: 20px;
-  }
-  
-  .search-bar:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
+  border: none;
+  background-color: white;
+  border-radius: 70%;
+  font-size: 20px;
+  color: rgb(20, 107, 174);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+ 
+  z-index: 1;
+}
+
+.scroll-arrow:hover {
+  color: #41382f;
+}
+
+.scroll-arrow:first-of-type {
+  left: 0;
+}
+
+.scroll-arrow:last-of-type {
+  right: 0;
+}

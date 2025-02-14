@@ -6,7 +6,7 @@
     height: 100%;
     width: 250px;  /* Default width when expanded */
     transition: all 0.3s ease;
-    background: #153232; /* Gradient background */
+    background: #f83104; /* Gradient background */
     z-index: 999;
     font-size: 15px;
     overflow: hidden;
@@ -22,16 +22,16 @@
 .sidebar-header {
     padding: 20px;
     text-align: center;
-    background: #153232; /* Solid color for header */
-    color: white;
+    background: #f83104; /* Solid color for header */
+    color: black;
     font-weight: bold;
-    border-bottom: 1px solid #153232;
+    border-bottom: 1px solid #f83104;
     font-size: 18px;
 }
 
 /* Menu bar inside the sidebar */
 .menu-bar {
-    background-color: #153232;
+    background-color: #f83104;
     height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
 .menu-bar .menu-item {
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
     padding: 15px;
     padding-left: 20px;
     text-decoration: none;
@@ -73,7 +73,7 @@
     top: 10px;
     right: 10px; /* Fix the position to the top-right corner */
     background: white; /* Dark blue background for the button */
-    color: #153232;
+    color: #f83104;
     padding: 5px;
     padding-left: 10px;
     border-radius: 20%;

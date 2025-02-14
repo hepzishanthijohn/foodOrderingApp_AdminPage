@@ -1,0 +1,52 @@
+.dashboard-stats-container {
+  margin-top: 30px;
+ 
+}
+
+.dashboard-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add some space between cards */
+  
+}
+
+.dashboard-card .card-body {
+  padding: 15px;
+}
+
+.dashboard-card h4 {
+  font-size: 1.5rem; /* Decrease the size of the title */
+  margin-bottom: 8px;
+}
+
+.dashboard-card p {
+  font-size: 1rem; /* Adjust font size */
+}
+
+.dashboard-card .d-flex {
+  margin-bottom: 15px;
+}
+
+.dashboard-card .ml-3 {
+  margin-left: 12px;
+}
+
+.dashboard-card canvas {
+  max-width: 100%;
+  max-height: 200px; /* Adjust the maximum height of the charts */
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    margin-bottom: 15px;
+  }
+  .dashboard-card h4 {
+    font-size: 1.3rem; /* Adjust the font size for smaller screens */
+  }
+  .dashboard-card p {
+    font-size: 0.9rem; /* Adjust the font size for smaller screens */
+  }
+}

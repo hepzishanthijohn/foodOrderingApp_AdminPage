@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <BootstrapNavbar className="navbar_items" style={{ backgroundColor: "#153232", top: "0", width: "100%", position: "fixed", zIndex: "999" }} expand="lg">
+      <BootstrapNavbar className="navbar_items" style={{ backgroundColor: "#f83104", top: "0", width: "100%", position: "fixed", zIndex: "999" }} expand="lg">
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto d-flex justify-content-end w-100 align-items-center">
