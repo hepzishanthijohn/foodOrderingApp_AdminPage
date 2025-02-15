@@ -1,0 +1,68 @@
+.category-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .category-scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 40px;
+  }
+  
+  .scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .scroll-arrow.left-arrow {
+    left: 10px;
+  }
+  
+  .scroll-arrow.right-arrow {
+    right: 10px;
+  }
+  
+  .category-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 60px;
+    padding-bottom: 20px;
+  }
+  
+  .category-item {
+    width: 290px; /* Increased card width */
+    height: 180px; /* Increased card height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd; /* Optional: add border to differentiate the card */
+    border-radius: 8px; /* Optional: add rounded corners to the card */
+    padding: 90px; /* Padding inside the card */
+    background-color: #f8f9fa; /* Light background color for the card */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  }
+  
+  .category-item img {
+    width: 60px; /* Reduced image size */
+    height: 60px; /* Keep the aspect ratio square */
+    object-fit: contain; /* Ensures the image fits within the box */
+  }
+  
+  .category-title {
+    margin-top: 10px;
+    font-size: 16px; /* Slightly larger font size for the title */
+    text-align: center;
+    font-weight: bold; /* Optional: make the title bold */
+  }
+  

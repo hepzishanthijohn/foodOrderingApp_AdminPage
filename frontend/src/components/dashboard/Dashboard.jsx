@@ -5,6 +5,7 @@ import { FaTrashAlt, FaPlus, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import './Dashboard.css';
 import Counts from '../counts/Counts';
 import BoxCount from '../BoxCount/BoxCount';
+import Category from '../category/Categories';
 
 const Dashboard = () => {
   const [products, setProducts] = useState([]);
@@ -55,11 +56,14 @@ const Dashboard = () => {
 
   return (
     <>
-    <div style={{paddingTop:"5%",width:"90%",paddingLeft:"8%"}}>
+    <div style={{paddingTop:"2%",width:"90%",paddingLeft:"8%"}}>
     <BoxCount />
     </div>
+    <div>
+      <Category/>
+    </div>
     <div className="dashboard-container" >
-      <div className="container "style={{paddingTop:"5%"}}>
+      <div className="container "style={{paddingTop:"1%"}}>
         {/* Add Product Button */}
 
 

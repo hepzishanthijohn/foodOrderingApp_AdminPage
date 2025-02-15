@@ -32,7 +32,7 @@ const Sidebar = () => {
           <FaUtensils style={{fontSize:"25px"}}/>
           {!collapsed && <span>Orders</span>}
         </Link>
-        <Link to="/addItem" className="menu-item">
+        <Link to="/addproduct" className="menu-item">
           <FaBox  style={{fontSize:"25px"}}/>
           {!collapsed && <span>Add Items</span>}
         </Link><Link to="/listItem" className="menu-item">

@@ -116,8 +116,8 @@ const ListProduct = () => {
 
     return (
         <div className="listContainer">
-            <div className="list-product">
-                <h1>All Items List</h1>
+            <div className="list-product"  >
+                <h1 style={{marginTop:'50px'}}>All Items List</h1>
 
                 <div className="filter-sort-container">
                     {/* Sort Button (Left End) */}
@@ -154,7 +154,7 @@ const ListProduct = () => {
                     {filterAndSortProducts().map((product) => (
                         <div
                             key={product.id}
-                            className={`listproduct-format-main listproduct-format ${product.quantity < 10 ? 'low-stock' : ''}`}
+                            className={`listproduct-format-main listproduct-format `}
                         >
                             <img src={product.image_url} alt="" className="listproduct-product-icon" />
                             <p>{product.title}</p>

@@ -19,9 +19,9 @@ const BoxCount = () => {
       .then(response => setItemCount(response.data.data.count))
       .catch(error => console.error('Error fetching item count:', error));
 
-    axios.get('https://yourapi.com/orders/count')
-      .then(response => setOrderCount(response.data.count))
-      .catch(error => console.error('Error fetching order count:', error));
+    // axios.get('https://yourapi.com/orders/count')
+    //   .then(response => setOrderCount(response.data.count))
+    //   .catch(error => console.error('Error fetching order count:', error));
   }, []);
 
   return (

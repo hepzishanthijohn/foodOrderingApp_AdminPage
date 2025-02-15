@@ -2,11 +2,19 @@ body{
     padding-top: 50px;
 }
 .admin {
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: rgba(252, 252, 252, 0.927); /* Semi-transparent light gray */
     background-image: linear-gradient(135deg, rgba(252, 250, 252, 0.91), rgba(0, 128, 128, 0.2)); /* Light gradient to teal */
     color: #333; /* Dark text for readability */
   }
   
-  
+@media(max-width:500px){
+    .admin{
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+}
   
   
