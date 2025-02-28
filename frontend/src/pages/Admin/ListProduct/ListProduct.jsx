@@ -124,7 +124,7 @@ const ListProduct = () => {
                     <div className="sort-container">
                         <button className="sort-button" onClick={toggleSortOrder}>
                             <FaSortAmountDown size={20} />
-                            {sortAscending ? 'Sort by Quantity (Asc)' : 'Sort by Quantity (Desc)'}
+                            {sortAscending ? 'Sort by Category (Asc)' : 'Sort by Category (Desc)'}
                         </button>
                     </div>
 
@@ -187,13 +187,34 @@ const ListProduct = () => {
                                         value={editedProductData.title}
                                         onChange={handleEditChange}
                                     />
-                                    <label>Category</label>
+                                    <br />
+                                    {/* <label>Category</label>
                                     <input
                                         type="text"
                                         name="category"
                                         value={editedProductData.category}
                                         onChange={handleEditChange}
-                                    />
+                                    /> */}
+                                    <label>Category</label>
+<select
+    name="category"
+    value={editedProductData.category}
+    onChange={handleEditChange}
+>
+    <option value='burger'>Burger</option>
+    <option value='pizza'>Pizza</option>
+    <option value='pasta'>Pasta</option>
+    <option value='desserts'>Desserts</option>
+    <option value='chicken'>Chicken</option>
+    <option value='icecream'>Ice Cream</option>
+    <option value='salad'>Salad</option>
+    <option value='soup'>Soup</option>
+    <option value='fish'>Fish</option>
+    <option value='meat'>Meat</option>
+    <option value='beverages'>Beverages</option>
+</select>
+
+                                    <br />
                                     <label>Price</label>
                                     <input
                                         type="number"
@@ -201,6 +222,7 @@ const ListProduct = () => {
                                         value={editedProductData.price}
                                         onChange={handleEditChange}
                                     />
+                                    <br />
                                     <label>Quantity</label>
                                     <input
                                         type="number"
@@ -208,6 +230,7 @@ const ListProduct = () => {
                                         value={editedProductData.quantity}
                                         onChange={handleEditChange}
                                     />
+                                    <br />
                                     <label>Image</label>
                                     <input
                                         type="file"

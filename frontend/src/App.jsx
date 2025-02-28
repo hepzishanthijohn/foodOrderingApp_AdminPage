@@ -7,7 +7,9 @@ import Portal from './pages/Admin/Portal';
 import EditProduct from './pages/Admin/EditProduct/EditProduct';
 import './App.css'; // Import your styles
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Dashboard from './components/dashboard/Dashboard';
+import Restaurant from './components/restaurant/Restaurant'
+import HomePage from './components/home/Home';
+import Orders from './components/orders/Orders';
 
 
 const App = () => {
@@ -18,10 +20,11 @@ const App = () => {
        
      <Route path='/' element={<Portal/>}>
      {/* <Route path='/' element={<HomePage/>}/> */}
-     <Route path='/' element={<Dashboard/>}/>
+     <Route path='/' element={<HomePage/>}/>
+     <Route path='restaurants' element={<Restaurant/>}/>
              <Route path='addproduct' element={<AddProduct/>}/>
              <Route path='listItem' element={<ListProduct/>}/>
-             
+             <Route path='orders' element={<Orders/>}/>
       </Route>
       </Routes>
       <Footer/>

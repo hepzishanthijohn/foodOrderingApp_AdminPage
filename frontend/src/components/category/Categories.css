@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-top: -20px;
   }
   
   .category-scroll-container {
@@ -31,7 +32,7 @@
   .category-container {
     display: flex;
     flex-wrap: nowrap;
-    gap: 60px;
+    gap: 10px;
     padding-bottom: 20px;
   }
   
@@ -45,7 +46,7 @@
     border: 1px solid #ddd; /* Optional: add border to differentiate the card */
     border-radius: 8px; /* Optional: add rounded corners to the card */
     padding: 90px; /* Padding inside the card */
-    background-color: #f8f9fa; /* Light background color for the card */
+    background-color: #ffffff; /* Light background color for the card */
     transition: transform 0.3s ease; /* Smooth scaling effect on hover */
   }
   
@@ -54,8 +55,8 @@
   }
   
   .category-item img {
-    width: 60px; /* Reduced image size */
-    height: 60px; /* Keep the aspect ratio square */
+    width: 70px; /* Reduced image size */
+    height: 70px; /* Keep the aspect ratio square */
     object-fit: contain; /* Ensures the image fits within the box */
   }
   

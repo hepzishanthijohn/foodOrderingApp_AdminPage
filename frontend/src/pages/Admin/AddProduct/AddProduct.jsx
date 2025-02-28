@@ -6,7 +6,7 @@ import upload_area from '../../Assets/Admin_Assets/upload_area.svg';
 const AddProduct = () => {
   const [title, setTitle] = useState('');
   const [file, setFile] = useState(null);
-  const [category, setCategory] = useState('Dinner');
+  const [category, setCategory] = useState('Burger');
   const [price, setPrice] = useState('');
   const [quantity, setQuantity] = useState('');
   const [loading, setLoading] = useState(false); // State for loading
@@ -87,10 +87,17 @@ const AddProduct = () => {
           style={{fontSize:"18px"}}
         >
           
-          <option value='breakfast'>BreakFast</option>
-<option value='dinner'>Dinner</option>
-<option value='lunch'>Lunch</option>
-
+          <option value='burger'>Burger</option>
+<option value='pizza'>Pizza</option>
+<option value='pasta'>Pasta</option>
+<option value='desserts'>Desserts</option>
+<option value='chicken'>Chicken</option>
+<option value='icecream'>Ice Cream</option>
+<option value='salad'>Salad</option>
+<option value='soup'>Soup</option>
+<option value='fish'>Fish</option>
+<option value='meat'>meat</option>
+<option value='beverages'>Beverages</option>
 
         </select>
       </div>

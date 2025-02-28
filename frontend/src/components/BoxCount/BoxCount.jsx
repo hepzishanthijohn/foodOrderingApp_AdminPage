@@ -33,7 +33,7 @@ const BoxCount = () => {
               <div className="d-flex align-items-center">
                 <FaUsers size={30} color="#FF4500" />
                 <div className="ml-3">
-                  <h4>{userCount}</h4>
+                  <h4>1500</h4>
                   <p>Users</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const BoxCount = () => {
               <div className="d-flex align-items-center">
                 <FaBoxOpen size={30} color="#4caf50"/>
                 <div className="ml-3">
-                  <h4>{itemCount}</h4>
+                  <h4>500</h4>
                   <p>Items</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const BoxCount = () => {
               <div className="d-flex align-items-center">
                 <FaClipboardList size={30} color="#2196F3" />
                 <div className="ml-3">
-                  <h4>{orderCount}</h4>
+                  <h4>5766</h4>
                   <p>Orders</p>
                 </div>
               </div>

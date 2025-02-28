@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Button, Spinner, Toast, Navbar, Nav, Container, Modal } from 'react-bootstrap';
 import { FaTrashAlt, FaPlus, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import './Dashboard.css';
+import './Restaurant.css';
 import Counts from '../counts/Counts';
-import BoxCount from '../BoxCount/BoxCount';
+import Banner from '../banner/Banner';
 import Category from '../category/Categories';
 
-const Dashboard = () => {
+import Menu from '../BestInSellers/Menu';
+
+const Restaurant = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -56,14 +58,23 @@ const Dashboard = () => {
 
   return (
     <>
-    <div style={{paddingTop:"2%",width:"90%",paddingLeft:"8%"}}>
-    <BoxCount />
-    </div>
-    <div>
-      <Category/>
-    </div>
+    <div className="main-layout">
+      <div className="left-column">
+        <div>
+          <Banner/>
+        </div>
+
+
+
+        <div>
+          <h3 style={{marginTop:"10px"}}>Categories</h3>
+          <Category/>
+        </div>
+        <h3>Popular in dishes</h3>
+
     <div className="dashboard-container" >
-      <div className="container "style={{paddingTop:"1%"}}>
+      
+      <div className="container "style={{paddingTop:"0%"}}>
         {/* Add Product Button */}
 
 
@@ -113,11 +124,16 @@ const Dashboard = () => {
         </Toast>
       </div>
     </div>
-    <div style={{marginLeft:"150px",width:"85%",marginTop:"40px",marginBottom:"90px"}}>
-    <Counts/>
+        <div style={{marginTop:"10px"}}>
+          <h3>Best In Sellers</h3>
+          <Menu/>
+        </div>
+      </div>
+      
     </div>
+
     </>
   );
 };
 
-export default Dashboard;
+export default Restaurant;

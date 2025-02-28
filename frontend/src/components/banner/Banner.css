@@ -1,0 +1,105 @@
+/* Banner.css */
+
+/* Main Banner Container */
+.banner-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px; /* Increased banner height */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.4)), url('../../assets/IMAGES/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 0 20px 0 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    margin-top: -40px;
+    
+  }
+  
+  
+  .banner-content {
+    max-width: 50%; /* Adjust width for content */
+    color: white;
+    text-align: left;
+    z-index: 2; /* Text above image */
+    padding: 30px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background for better text visibility */
+    border-radius: 10px;
+  }
+  
+  .banner-title {
+    font-size: 20px; /* Increased title size for a bolder impact */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .banner-subtitle {
+    font-size: 20px; /* Larger subtitle */
+    margin-bottom: 25px;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .banner-button {
+    padding: 10px 30px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .banner-button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Hover effect for the banner */
+  .banner:hover .banner-image {
+    filter: brightness(70%);
+  }
+  .banner-image{
+    width: 55%; /* Image takes full width on small screens */
+   
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column; /* Stack content and image vertically on smaller screens */
+      height: auto;
+      align-items: center;
+    }
+  
+    .banner-image {
+      width: 120%; /* Image takes full width on small screens */
+      height: auto; /* Adjust image height proportionally */
+      object-fit: cover;
+    }
+  
+    .banner-content {
+      max-width: 90%; /* Content takes up more space on smaller screens */
+      text-align: center; /* Center-align text */
+      padding: 20px;
+    }
+  
+    .banner-title {
+      font-size: 20px; /* Adjust title size */
+    }
+  
+    .banner-subtitle {
+      font-size: 13px; /* Adjust subtitle size */
+    }
+  
+    .banner-button {
+      font-size: 13px; /* Adjust button font size */
+    }
+  }
+  

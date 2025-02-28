@@ -27,6 +27,10 @@ const Sidebar = () => {
           <FaHome style={{fontSize:"25px"}}/>
           {!collapsed && <span>Dashboard</span>}
         </Link>
+        <Link to="/restaurants" className="menu-item">
+          <FaConciergeBell  style={{fontSize:"25px"}}/>
+          {!collapsed && <span>Restaurants</span>}
+        </Link>
 
         <Link to="/orders" className="menu-item">
           <FaUtensils style={{fontSize:"25px"}}/>
@@ -40,17 +44,13 @@ const Sidebar = () => {
           {!collapsed && <span>List Items</span>}
         </Link>
 
-        <Link to="/restaurants" className="menu-item">
-          <FaConciergeBell  style={{fontSize:"25px"}}/>
-          {!collapsed && <span>Restaurants</span>}
-        </Link>
-
-        <Link to="/users" className="menu-item">
+       
+        <Link to="#" className="menu-item">
           <FaUsers style={{fontSize:"25px"}}/>
           {!collapsed && <span>Users</span>}
         </Link>
 
-        <Link to="/analytics" className="menu-item">
+        <Link to="#" className="menu-item">
           <FaChartBar style={{fontSize:"25px"}} />
           {!collapsed && <span>Analytics</span>}
         </Link>
